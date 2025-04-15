@@ -1,0 +1,162 @@
+/* styles.css */
+
+
+/* Reset basic margins and paddings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+} */
+
+
+/* Background image full page */
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+/* Foreground content container */
+
+.example-container {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.example-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.example-content-main,
+.example-content-secondary {
+    display: flex;
+    align-items: center;
+}
+
+.example-content-main h1 {
+    color: rgb(11, 8, 8);
+    margin-left: 15px;
+    font-size: 36px;
+}
+
+
+/* Date button with gradient background */
+
+.gradient-button {
+    background: linear-gradient(to right, red, black);
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 20px;
+    font-size: 22px;
+    margin-top: 0px;
+    z-index: 2;
+    position: relative;
+    width: 420px;
+}
+
+
+/* Data buttons */
+
+.buttons {
+    background-color: red;
+    color: aliceblue;
+    border: 2px solid red;
+    padding: 12px 28px;
+    font-size: 22px;
+    border-radius: 6px;
+    margin: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 280px;
+    text-align: center;
+}
+
+.buttons:hover {
+    background-color: red;
+    color: white;
+}
+
+.buttons-1 {
+    background-color: rgb(5, 46, 92);
+    /* Bootstrap blue */
+    color: white;
+    border: 2px solid rgb(5, 46, 92);
+    padding: 12px 28px;
+    margin: 25px;
+    border-radius: 6px;
+    /* Rounded corners */
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 280px;
+    text-align: center;
+}
+
+.buttons-1:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+/* Layout container */
+
+.container {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .example-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .example-content-main h1 {
+        font-size: 28px;
+    }
+    .gradient-button {
+        margin-top: 250px;
+    }
+    .buttons {
+        width: 100%;
+        max-width: 250px;
+    }
+    .col {
+        margin-bottom: 20px;
+    }
+}
