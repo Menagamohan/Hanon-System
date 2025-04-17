@@ -127,7 +127,8 @@ html {
 
 /* Basic layout */
 
-.custom-table {
+
+/* .custom-table {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -157,10 +158,12 @@ html {
 
 /* Red button style */
 
+
+/* 
 .red-cell {
     background-color: red;
     color: white;
-}
+} */
 
 
 /* Hover effect */
@@ -173,12 +176,116 @@ html {
 
 /* Responsive for small screens */
 
-@media (max-width: 600px) {
+
+/* @media (max-width: 600px) {
     .custom-row {
         flex-direction: column;
         align-items: center;
     }
     .custom-cell {
         width: 90%;
+    }
+} */
+
+*/ .custom-table {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 12px 20px;
+    border-collapse: separate;
+    /* allow spacing */
+    border-spacing: 20px 10px;
+}
+
+.custom-table td {
+    /* background-color: #163682; */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    min-width: 350px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    cursor: pointer;
+    gap: 100px;
+}
+
+.red-cell {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+}
+
+.blue-cell {
+    background-color: rgb(18, 52, 108);
+    color: white;
+    font-size: 10px;
+}
+
+.custom-table {
+    width: 50%;
+    border-collapse: separate;
+    /* allow spacing */
+    border-spacing: 40px 20px;
+    /* horizontal 20px, vertical 10px */
+}
+
+.custom-table td {
+    padding: 23px;
+    border: 1px solid #ddd;
+}
+
+.red-cell {
+    color: red;
+    /* font-weight: bold; */
+}
+
+.blue-cell {
+    color: #183474;
+}
+
+
+/* Responsive Design */
+
+
+/* Mobile View (Portrait phones) */
+
+@media (max-width: 767px) {
+    .custom-table td {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+    .example-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-icon {
+        height: 90px;
+        width: 100px;
+    }
+    .logo-secondary {
+        height: 50px;
+        width: 150px;
+    }
+}
+
+
+/* TV / Large screen (min 1600px) */
+
+@media (min-width: 1600px) {
+    .custom-table td {
+        font-size: 1.6rem;
+        padding: 15px 30px;
+    }
+    .logo-icon {
+        height: 160px;
+        width: 180px;
+    }
+    .logo-secondary {
+        height: 100px;
+        width: 300px;
+    }
+    h1 {
+        font-size: 3rem;
     }
 }
