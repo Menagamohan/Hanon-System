@@ -23,8 +23,8 @@ html {
     position: absolute;
     /* top: 0;
     left: 0; */
-    /* width: auto;
-    height: auto; */
+    width: auto;
+    height: auto;
     object-fit: cover;
     z-index: 1;
 }
@@ -96,29 +96,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-/* Responsive Design */
-
-@media screen and (max-width: 768px) {
-    .example-row {
-        flex-direction: column;
-        text-align: center;
-    }
-    .example-content-main h1 {
-        font-size: 28px;
-    }
-    .gradient-button {
-        margin-top: 250px;
-    }
-    .buttons {
-        width: 100%;
-        max-width: 250px;
-    }
-    .col {
-        margin-bottom: 20px;
-    }
 }
 
 
@@ -245,90 +222,104 @@ html {
 }
 
 
-/* Responsive Design */
+/* ===================== Media Queries ===================== */
 
 
-/* Mobile View (Portrait phones) */
+/* Extra Small Devices (phones, <576px) */
 
-@media (max-width: 767px) {
-    .custom-table td {
-        padding: 6px 8px;
-        font-size: 0.9rem;
-    }
+@media (max-width: 575.98px) {
     .example-row {
         flex-direction: column;
-        text-align: center;
-    }
-    .logo-icon {
-        height: 90px;
-        width: 100px;
-    }
-    .logo-secondary {
-        height: 50px;
-        width: 150px;
-    }
-}
-
-
-/* TV / Large screen (min 1600px) */
-
-@media (min-width: 1600px) {
-    .custom-table td {
-        font-size: 1.6rem;
-        padding: 15px 30px;
-    }
-    .logo-icon {
-        height: 160px;
-        width: 180px;
-    }
-    .logo-secondary {
-        height: 100px;
-        width: 300px;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-}
-
-
-/* Mobile responsiveness */
-
-@media (max-width: 768px) {
-    .example-row {
-        flex-direction: column;
-        padding: 1rem !important;
-    }
-    .example-content-main,
-    .example-content-secondary {
-        margin-bottom: 15px;
         text-align: center;
     }
     .example-content-main img,
     .example-content-secondary img {
-        max-width: 100%;
-        height: auto;
-    }
-    .gradient-button {
-        width: 100%;
-        font-size: 16px;
-    }
-    .custom-table td {
-        font-size: 16px;
-    }
-    .example-container {
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .gradient-button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-    .custom-table td {
-        font-size: 14px;
+        width: 80px !important;
+        height: auto !important;
     }
     h1 {
         font-size: 20px;
+    }
+    .gradient-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    .custom-table td {
+        font-size: 14px;
+    }
+}
+
+
+/* Small Devices (landscape phones, ≥576px) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 22px;
+    }
+    .custom-table td {
+        font-size: 16px;
+    }
+}
+
+
+/* Medium Devices (tablets, ≥768px) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 26px;
+    }
+    .custom-table td {
+        font-size: 18px;
+    }
+}
+
+
+/* Large Devices (desktops/laptops, ≥992px) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1 {
+        font-size: 30px;
+    }
+    .custom-table td {
+        font-size: 20px;
+    }
+}
+
+
+/* Extra Large Devices (large desktops, ≥1200px) */
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+    h1 {
+        font-size: 36px;
+    }
+    .custom-table td {
+        font-size: 22px;
+    }
+}
+
+
+/* Ultra-Wide / TV Screens (4K displays, ≥1600px) */
+
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 42px;
+    }
+    .custom-table td {
+        font-size: 24px;
+    }
+    .background-image {
+        max-width: 2000px;
+        max-height: 3000px;
+        object-fit: cover;
+    }
+    .gradient-button {
+        font-size: 20px;
+        padding: 12px 28px;
+    }
+    .example-content-main img,
+    .example-content-secondary img {
+        width: auto !important;
+        height: auto !important;
+        max-height: 150px;
     }
 }
